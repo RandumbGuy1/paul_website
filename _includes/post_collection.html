@@ -1,0 +1,15 @@
+<hr>
+<br>
+
+<div class = "posts">
+    <h3> Posts </h3>
+    {% for post in site.posts %}
+
+        {% if page.title == post.title %}
+            <li> <a href = "{{ post.url }}" style = "color: red"> {{ post.title }} </a> </li>
+        {% else %}
+            <li> <a href = "{{ post.url }}"> {{ post.title }} </a> </li>
+        {% endif %}
+
+    {% endfor %}
+</div>

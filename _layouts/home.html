@@ -1,0 +1,21 @@
+{% include paul_header.html %}
+
+<h1> HOME </h1>
+
+Welcome to the website that is all about Paul!
+<br>
+<br>
+
+<h3> About Paul </h3>
+{% for fact in site.data.paul_facts %}
+<li>
+    {{ fact.fact }}
+</li>
+{% endfor %}
+
+
+<br>
+<br>
+<br>
+
+{% include post_collection.html %}

@@ -1,0 +1,22 @@
+<hr>
+<h1 class = "header-title" style="color: blue"> {{ site.title }} - <a href = "{{ site.url }}"> Home </a> </h1>
+
+<div class = "pages">
+    <h3> Pages </h3>
+    {% for page in site.pages %}
+        {% if page.title %}
+            <li> <a href = "{{ page.url }}"> {{ page.title }} </a> </li>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<div class = "banner">
+    <br>
+    <img src = "https://i.ibb.co/3y6mn6H/paul.jpg" width="600" height="150">
+    <img src = "https://i.ibb.co/RcBvmjk/Screenshot-2022-11-28-125918.png" width="600" height="150">
+    <img src = "https://i.ibb.co/K6zYqvJ/Screenshot-2022-11-28-125922.png" width="600" height="150">
+    <br>
+    <br>
+</div>
+
+<hr>
